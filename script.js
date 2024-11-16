@@ -3,7 +3,7 @@ async function fetchTokenData() {
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve({
-          price: Math.random() * 100, // Preço do token
+          price: Math.random() * 1, // Preço do token
           communitySize: Math.floor(Math.random() * 10), // Tamanho da comunidade
         });
       }, 1000);
