@@ -3,7 +3,7 @@ async function fetchTokenData() {
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve({
-          price: Math.random() * 1, // Preço do token
+          price: Math.random() * 100, // Preço do token
           communitySize: Math.floor(Math.random() * 10), // Tamanho da comunidade
         });
       }, 1000);
@@ -29,7 +29,7 @@ async function fetchTokenData() {
   // Função que ajusta a quantidade de brasas com base no preço
   function updateFireBasedOnPrice(price) {
     const fireContainer = document.getElementById("fire-container");
-    const fireCount = Math.min(10000000, Math.max(10, Math.floor(price * 1000))); // Calcula o número de brasas
+    const fireCount = Math.min(10000000, Math.max(10, Math.floor(price * 5))); // Calcula o número de brasas
   
     // Gera brasas extras se o preço aumentar
     const colors = ["yellow", "green", "blue"];
